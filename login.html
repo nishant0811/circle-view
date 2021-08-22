@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/17.png" type="image/x-icon">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="logo">
+      <img src="assets/logo.png" alt="">
+    </div>
+    <div class="login__container">
+      <div class="left__image">
+        <img src="assets/loginImg.png" alt="">
+      </div>
+      <div class="login__inputs">
+        <h1>USER LOGIN</h1>
+        <div class="lgi">
+          <i class="fas fa-user"></i>
+          <input type="text" name="username" value="" placeholder=" Username">
+        </div>
+        <div class="lgi">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" value="" placeholder=" Password">
+        </div>
+        <div class="forgotPassword">
+          <div class="fgi" id="fgi">
+            <i class="fas fa-check-circle" id='checkmark'></i>
+            <p>Remember</p>
+            <input type="checkbox" name="remember" value="" id="remember" style="display:none">
+          </div>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <a href="#" class="login__button">LOGIN</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      document.getElementById('checkmark').addEventListener('click' , ()=>{
+        document.getElementById('fgi').classList.toggle('active');
+      })
+    </script>
+  </body>
+</html>

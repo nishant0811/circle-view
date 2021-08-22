@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MVP Comments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/17.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/progresscircle.css">
+  <link rel="stylesheet" href="css/mvpComments.css">
+  <link rel="stylesheet" href="/css/mvpInnerSidebar.css">
+</head>
+
+<body>
+  <div class="logo">
+    <div class="left__side">
+      <i class="fas fa-bars" onclick="sidebar()"></i>
+      <img src="assets/logo.png" alt="">
+    </div>
+    <div class="right__side">
+      <div class="videocall">
+        <i class="fas fa-video"></i>
+        <p class="text">Floor Cam</p>
+      </div>
+      <div class="profile">
+        <div class="profile__image">
+          <img src="https://allinonetrickz.com/wp-content/uploads/2019/05/Girls-Trending-Profile-Pic-2019.png" alt="">
+        </div>
+        <a href="#" class="text">Need Help?</a>
+      </div>
+    </div>
+  </div>
+  <div class="main__body">
+    <div class="sidebar">
+      <ul>
+        <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
+        <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
+        <li class="active"><a href="#"> <img src="assets/docs.png" alt=""> Plan</a></li>
+        <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
+        <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
+        <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
+        <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+      </ul>
+      <div class="footer">
+        <p> © 2020 Circle View. All Rights Reserved.</p>
+      </div>
+    </div>
+    <div class="sidebar__mobile" id="sidebar__mobile">
+      <div class="sidebar">
+        <ul>
+          <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
+          <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
+          <li class="active"><a href="#"> <img src="assets/docs.png" alt=""> Plan</a></li>
+          <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
+          <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
+          <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
+          <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+        </ul>
+        <div class="footer">
+          <p> © 2020 Circle View. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="title comment">
+      <p>Plan</p>
+    </div>
+    <div class="center__content">
+      <div class="">
+        <a href="#">Goals</a>
+      </div>
+      <div class="">
+        <a href="#">KPIs</a>
+      </div>
+      <div class="">
+        <a href="#">Projects</a>
+      </div>
+      <div class="">
+        <a href="#">Tasks</a>
+      </div>
+      <div class="">
+        <a href="#">Comments</a>
+      </div>
+      <div class="">
+        <a href="#">Create A Report</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/progresscircle.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('.circlechart').circlechart();
+    });
+  </script>
+  <script src="js/sidebar.js" charset="utf-8"></script>
+</body>
+
+</html>

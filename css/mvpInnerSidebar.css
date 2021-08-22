@@ -1,0 +1,24 @@
+.center__content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  padding: 16px;
+
+}
+
+.center__content > div{
+  text-align: center;
+  padding: 32px;
+  border-radius: 16px;
+  background: linear-gradient(to bottom , #36CADB , #56E7BC);
+}
+
+.center__content > div a{
+  color : white;
+}
+
+@media (max-width : 350px) {
+  .center__content{
+    grid-template-columns: 1fr;
+  }
+}

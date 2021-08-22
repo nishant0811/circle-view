@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 1px 10px 7px -8px rgba(0,0,0,0.19);
+-webkit-box-shadow: 1px 10px 7px -8px rgba(0,0,0,0.19);
+-moz-box-shadow: 1px 10px 7px -8px rgba(0,0,0,0.19);
+
+}
+
+.logo img{
+  width: 150px;
+}
+
+
+.login__container{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  margin: 128px auto;
+  border-radius: 16px;
+  width: 85%;
+  box-shadow: 1px 5px 15px 4px rgba(0,0,0,0.21);
+  -webkit-box-shadow: 1px 5px 15px 4px rgba(0,0,0,0.21);
+  -moz-box-shadow: 1px 5px 15px 4px rgba(0,0,0,0.21);
+}
+
+.left__image{
+  text-align: center;
+}
+
+.left__image img{
+  width: 85%;
+}
+
+.login__inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #405ADB;
+  border-radius: 0  16px 16px 0;
+}
+
+
+.login__inputs h1 {
+  color : white;
+  margin-bottom: 16px;
+}
+
+.login__inputs div {
+  width: 50%;
+}
+
+.login__inputs .lgi i{
+  background: white;
+  padding: 16.5px 16px;
+  border-radius: 8px 0 0 8px;
+  color : #073767;
+  font-size: 16px;
+}
+
+.lgi{
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.login__inputs input{
+  border : 0;
+  padding: 16.5px 16px 14.5px 0;
+  border-radius:  0 8px 8px 0;
+  font-family: 'Roboto', sans-serif;
+  width: 82%;
+  font-size: 16px;
+  margin-left: -4px;
+}
+
+::placeholder {
+  color : #073767;
+}
+
+.login__inputs input:focus , .login__inputs input:active{
+  border: 0;
+  outline: 0;
+}
+
+.forgotPassword{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  color : white;
+  width: 60%;
+}
+.forgotPassword a{
+  color: white;
+  font-weight: 400;
+}
+
+.login__button{
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 16px 64px;
+  border-radius: 12px;
+  background: #3CB6CB;
+}
+
+
+.fgi{
+  display: flex;
+  align-items: center;
+}
+
+.fgi i{
+  margin-right: 8px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.fgi.active i{
+  color : #3CB6CB;
+}
+
+
+@media (max-width : 1205px) {
+  .login__inputs div{
+    width: 70%;
+  }
+}
+
+@media (max-width : 984px) {
+  .login__inputs{
+    padding: 32px 0;
+  }
+}
+
+@media (max-width : 865px) {
+  .login__inputs div{
+    width: 90%;
+  }
+
+  .left__image img{
+    margin-top: 10%;
+    width: 90%;
+  }
+}
+
+@media (max-width : 700px) {
+  .login__container{
+    grid-template-columns: 1fr;
+  }
+
+  .left__image img{
+    width: 75%;
+  }
+
+  .login__inputs{
+    border-radius: 16px;
+  }
+}
+
+
+@media (max-width : 425px) {
+  .login__inputs h1{
+    font-size: 22px;
+  }
+
+  .login__inputs .lgi i{
+    font-size: 12px;
+  }
+
+  .login__inputs input {
+    font-size: 12px;
+  }
+
+  .login__button{
+    font-size: 16px;
+  }
+
+  .forgotPassword a{
+    font-size: 12px;
+  }
+
+  .fgi p{
+    font-size: 12px;
+  }
+
+  .fgi i{
+    font-size: 16px;
+  }
+
+}

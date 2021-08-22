@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MVP Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/17.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/progresscircle.css">
+  <link rel="stylesheet" href="css/mvpQuickDashboard.css">
+</head>
+
+<body>
+  <div class="logo">
+    <div class="left__side">
+      <i class="fas fa-bars" onclick="sidebar()"></i>
+      <img src="assets/logo.png" alt="">
+    </div>
+    <div class="right__side">
+      <div class="videocall">
+        <i class="fas fa-video"></i>
+        <p class="text">Floor Cam</p>
+      </div>
+      <div class="profile">
+        <div class="profile__image">
+          <img src="https://allinonetrickz.com/wp-content/uploads/2019/05/Girls-Trending-Profile-Pic-2019.png" alt="">
+        </div>
+        <a href="#" class="text">Need Help?</a>
+      </div>
+    </div>
+  </div>
+  <div class="main__body">
+    <div class="sidebar">
+      <ul>
+        <li class="active"><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
+        <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
+        <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
+        <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
+        <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
+        <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
+        <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+      </ul>
+      <div class="footer">
+        <p> © 2020 Circle View. All Rights Reserved.</p>
+      </div>
+    </div>
+    <div class="sidebar__mobile" id="sidebar__mobile">
+      <div class="sidebar">
+        <ul>
+          <li class="active"><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
+          <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
+          <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
+          <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
+          <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
+          <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
+          <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+        </ul>
+        <div class="footer">
+          <p> © 2020 Circle View. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="center__content">
+      <div class="tasks">
+        <div class="today">
+          <div class="title">
+            <p>Today's Tasks</p>
+          </div>
+          <div class="task">
+            <div class="task__task active">
+              <p>Complete</p>
+              <img src="assets/checkActive.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="week">
+          <div class="title">
+            <p>This Week</p>
+          </div>
+          <div class="task">
+            <div class="task__task active">
+              <p>Complete</p>
+              <img src="assets/checkActive.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+            <div class="task__task">
+              <p>10:00 am Team Meeting</p>
+              <img src="assets/check.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="discovery">
+          <div class="title">
+            <p>Team Discovery</p>
+          </div>
+          <div class="discover">
+            <p class="red">KPI 1</p>
+            <p class="yellow">KPI 1</p>
+            <p class="green">KPI 1</p>
+            <p class="red">KPI 1</p>
+            <p class="yellow">KPI 1</p>
+            <p class="green">KPI 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="issues">
+        <div class="title comment">
+          <p>Recent Open Issues</p>
+        </div>
+
+        <div class="table">
+          <table>
+            <thead>
+            <th class="first">Date</th>
+            <th>Location</th>
+            <th>Details</th>
+            <th class="last">Assing To</th>
+          </thead>
+          <tr>
+            <td>02/05/2020</td>
+            <td>Location Here</td>
+            <td>lorem ipsum set istumus</td>
+            <td>Name here</td>
+          </tr>
+          <tr>
+            <td>02/05/2020</td>
+            <td>Location Here</td>
+            <td>lorem ipsum set istumus</td>
+            <td>Name here</td>
+          </tr>
+          <tr>
+            <td>02/05/2020</td>
+            <td>Location Here</td>
+            <td>lorem ipsum set istumus</td>
+            <td>Name here</td>
+          </tr>
+          <tr>
+            <td>02/05/2020</td>
+            <td>Location Here</td>
+            <td>lorem ipsum set istumus</td>
+            <td>Name here</td>
+          </tr>
+          <tr>
+            <td>02/05/2020</td>
+            <td>Location Here</td>
+            <td>lorem ipsum set istumus</td>
+            <td>Name here</td>
+          </tr>
+          </table>
+        </div>
+      </div>
+      <div class="title" style="margin-top : 16px;">
+        <p>Strategic Goals</p>
+      </div>
+      <div class="goal__progress">
+        <div class="goal1">
+          <!-- <div class="circlechart" data-percentage="-20">jQuery</div> -->
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal1" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal1" stroke-dasharray="62,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info"> <text class="circle-chart__percent goal1" x="15.9" y="17.5">62</text><text class="circle-chart__subline goal1" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number green">
+            <p>Goal 1</p>
+          </div>
+        </div>
+        <div class="goal2">
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal2" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal2" stroke-dasharray="50,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent goal2"x="15.9" y="17.5">50</text>
+              <text class="circle-chart__subline goal2" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number purple">
+            <p>Goal 2</p>
+          </div>
+        </div>
+        <div class="goal3">
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal3" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal3" stroke-dasharray="25,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent goal3" x="15.9" y="17.5">25</text>
+              <text class="circle-chart__subline goal3" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number yellow ">
+            <p>Goal 3</p>
+          </div>
+        </div>
+        <div class="goal4">
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal4" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal4" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent goal4" x="15.9" y="17.5">75</text>
+              <text class="circle-chart__subline goal4" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number green">
+            <p>Goal 4</p>
+          </div>
+        </div>
+        <div class="goal1">
+          <!-- <div class="circlechart" data-percentage="-20">jQuery</div> -->
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal1" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal1" stroke-dasharray="62,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info"> <text class="circle-chart__percent goal1" x="15.9" y="17.5">62</text><text class="circle-chart__subline goal1" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number green">
+            <p>Goal 1</p>
+          </div>
+        </div>
+        <div class="goal2">
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal2" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal2" stroke-dasharray="50,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent goal2"x="15.9" y="17.5">50</text>
+              <text class="circle-chart__subline goal2" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number purple">
+            <p>Goal 2</p>
+          </div>
+        </div>
+        <div class="goal3">
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal3" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal3" stroke-dasharray="25,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent goal3" x="15.9" y="17.5">25</text>
+              <text class="circle-chart__subline goal3" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number yellow ">
+            <p>Goal 3</p>
+          </div>
+        </div>
+        <div class="goal4">
+          <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+            <circle class="circle-chart__background goal4" cx="16.9" cy="16.9" r="15.9"></circle>
+            <circle class="circle-chart__circle goal4" stroke-dasharray="75,100" cx="16.9" cy="16.9" r="15.9"></circle>
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent goal4" x="15.9" y="17.5">75</text>
+              <text class="circle-chart__subline goal4" x="23" y="16">%</text> </g>
+          </svg>
+          <p>Goal Title</p>
+          <div class="goal__number green">
+            <p>Goal 4</p>
+          </div>
+        </div>
+      </div>
+      <div class="calendar__notes">
+        <div class="calendar">
+          <div class="title">
+            <p>Monthly calendar</p>
+          </div>
+          <div class="calendar__content">
+            <table>
+              <tr>
+                <th class="weekend">Sunday</th>
+                <th class="weekday">Monday</th>
+                <th class="weekday">Tuesday</th>
+                <th class="weekday">Wednesday</th>
+                <th class="weekday">Thursday</th>
+                <th class="weekday">Friday</th>
+                <th class="weekend">Saturday</th>
+              </tr>
+
+              <tr>
+                <td class="dis"></td>
+                <td class="dis"></td>
+                <td class="weekday">1 Jan</td>
+                <td class="weekday">2</td>
+                <td class="weekday">3</td>
+                <td class="weekday">4</td>
+                <td class="weekend">5</td>
+              </tr>
+              <tr>
+                <td class="weekend">6</td>
+                <td class="weekday">7</td>
+                <td class="weekday">8</td>
+                <td class="weekday">9</td>
+                <td class="weekday">10</td>
+                <td class="weekday">11</td>
+                <td class="weekend">12</td>
+              </tr>
+              <tr>
+                <td class="weekend">13</td>
+                <td class="weekday">14</td>
+                <td class="weekday">15</td>
+                <td class="weekday">16</td>
+                <td class="weekday">17</td>
+                <td class="weekday">18</td>
+                <td class="weekend">19</td>
+              </tr>
+              <tr>
+                <td class="weekend">20</td>
+                <td class="weekday">21</td>
+                <td class="weekday">22</td>
+                <td class="weekday">23</td>
+                <td class="weekday">24</td>
+                <td class="weekday">25</td>
+                <td class="weekend">26</td>
+              </tr>
+              <tr>
+                <td class="weekend">27</td>
+                <td class="weekday">28</td>
+                <td class="weekday">29</td>
+                <td class="weekday">30</td>
+                <td class="weekday">31</td>
+                <td class="dis"></td>
+                <td class="dis"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="notes">
+          <div class="title">
+            <p>Team Comments and Notes</p>
+          </div>
+          <div class="notes__div">
+            <textarea name="notes"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/sidebar.js" charset="utf-8"></script>
+</body>
+
+</html>

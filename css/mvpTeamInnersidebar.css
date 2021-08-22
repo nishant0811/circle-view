@@ -1,0 +1,10 @@
+.center__content{
+  display: block;
+}
+
+@media (max-width : 750px) {
+
+  .inner__sidebar{
+    display: block;
+  }
+}
