@@ -73,24 +73,41 @@
     <div class="center__content">
       <div class="inner__sidebar">
         <ul>
-          <li>
-          <a href="#">Team</a>
+          <li class="dropdown_menu">
+          <p href="#">Team</p>
           <i class="fas fa-chevron-down"></i>
         </li>
-        <li> <a href="#">Suppliers</a><i class="fas fa-chevron-down"></i> </li>
-        <li class="active"> <a href="#">Recent Chats</a> </li>
-        <li> <a href="#">Sarah</a> </li>
-        <li> <a href="#">Ben & Pat</a> </li>
-        <li> <a href="#">Bill,Sarah & Jacob</a> </li>
-        <li> <a href="#">James,Bill,Sarah...</a> </li>
-        <li> <a href="#">Jacob & Beth</a> </li>
+        <li class="dropdownItems">
+          <div class="">
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+
+          </div>
+        </li>
+        <li class="dropdown_menu"> <p>Suppliers</p><i class="fas fa-chevron-down"></i> </li>
+        <li class="dropdownItems">
+          <div class="">
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+          </div>
+        </li>
+        <li class="active hover"> <a href="#">Recent Chats</a> </li>
+        <li class="hover"onclick="setActive(1)"> <p>Sarah</p> </li>
+        <li class="hover"onclick="setActive(2)"> <p>Ben & Pat</p> </li>
+        <li class="hover"onclick="setActive(3)"> <p>Bill,Sarah & Jacob</p> </li>
+        <li class="hover"onclick="setActive(4)"> <p>James,Bill,Sarah...</p> </li>
+        <li class="hover"onclick="setActive(2)"> <p>Jacob & Beth</p> </li>
         </ul>
       </div>
       <div class="content">
         <div class="heading">
           <p>You are messaging - </p>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="userProfiles">
           <div class="profile active">
             <div class="background">
 
@@ -188,13 +205,23 @@
               </div>
 
             </div>
+            <form class="" action="index.html" method="post">
+
             <div class="send__messages">
-              <i class="fas fa-paperclip"></i>
+              <i class="fas fa-paperclip" onclick='fileUpload()'></i>
               <i class="fas fa-video"></i>
-              <i class="fas fa-user-plus"></i>
+              <i class="fas fa-user-plus" onclick='addUserShow()'></i>
+              <div class="add__user" id="addUser">
+                <p onclick="addUser(); addUserShow()">Name</p>
+                <p onclick="addUser(); addUserShow()">Name</p>
+                <p onclick="addUser(); addUserShow()">Name</p>
+                <p onclick="addUser(); addUserShow()">Name</p>
+              </div>
               <input type="text" name="" value="" class="text" placeholder="Type.....">
               <button type="button" name="button" class="send">Send</button>
+              <input type="file" name="" value="" id="file">
             </div>
+          </form>
           </div>
           <div class="notes">
             <div class="heading">
@@ -211,6 +238,8 @@
   </div>
 
   <script src="js/sidebar.js" charset="utf-8"></script>
+  <script src="js/team.js" charset="utf-8"></script>
+
 </body>
 
 </html>

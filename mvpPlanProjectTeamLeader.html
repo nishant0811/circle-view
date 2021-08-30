@@ -86,6 +86,10 @@
         <div class="title">
           <p>Strategic Goals</p>
         </div>
+        <div class="addComment" onclick="showGoalForm()">
+          <img src="assets/add.png" alt="">
+          <p>Add New Goal</p>
+        </div>
         <div class="goal__progress">
           <div class="goal1">
             <!-- <div class="circlechart" data-percentage="-20">jQuery</div> -->
@@ -97,6 +101,15 @@
             <p>Goal Title</p>
             <div class="goal__number goal1">
               <p>Goal 1</p>
+            </div>
+            <div class="modal">
+              <div class="modal__content">
+                <div class="contentt">
+                <p>Bill completed his assigned task yesterday.</p>
+                <p> Click below to see more details.</p>
+              </div>
+                <a href="#">Task</a>
+              </div>
             </div>
           </div>
           <div class="goal2">
@@ -111,6 +124,15 @@
             <div class="goal__number goal2">
               <p>Goal 2</p>
             </div>
+            <div class="modal">
+              <div class="modal__content">
+                <div class="contentt">
+                <p>Bill completed his assigned task yesterday.</p>
+                <p> Click below to see more details.</p>
+              </div>
+                <a href="#">Task</a>
+              </div>
+            </div>
           </div>
           <div class="goal3">
             <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
@@ -123,6 +145,15 @@
             <p>Goal Title</p>
             <div class="goal__number goal3 ">
               <p>Goal 3</p>
+            </div>
+            <div class="modal">
+              <div class="modal__content">
+                <div class="contentt">
+                <p>Bill completed his assigned task yesterday.</p>
+                <p> Click below to see more details.</p>
+              </div>
+                <a href="#">Task</a>
+              </div>
             </div>
           </div>
           <div class="goal4">
@@ -137,10 +168,23 @@
             <div class="goal__number goal1">
               <p>Goal 4</p>
             </div>
+            <div class="modal">
+              <div class="modal__content">
+                <div class="contentt">
+                <p>Bill completed his assigned task yesterday.</p>
+                <p> Click below to see more details.</p>
+              </div>
+                <a href="#">Task</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="title comment">
           <p>Personal Projects</p>
+        </div>
+        <div class="addComment" onclick="showKpiForm()">
+          <img src="assets/add.png" alt="">
+          <p>Create A Project</p>
         </div>
         <div class="projects">
           <div class="project">
@@ -178,6 +222,10 @@
         </div>
         <div class="title comment">
           <p>Team Projects</p>
+        </div>
+        <div class="addComment" onclick="showKpiForm2()">
+          <img src="assets/add.png" alt="">
+          <p>Create A Project</p>
         </div>
         <div class="projects">
           <div class="project">
@@ -274,6 +322,105 @@
         </div>
       </div>
     </div>
+    <div class="goal__popup__container" id="goalPopUP">
+      <div class="top__section">
+        <p>Create A Goal</p>
+        <i class="fas fa-times" onclick="showGoalForm()"></i>
+      </div>
+      <div class="goal__inputs">
+        <p>Name</p>
+        <input type="text" name="name" value="">
+        <p>Owner</p>
+        <input type="text" name="owner" value="">
+        <p>Unit of Measurement</p>
+        <input type="text" name="unitmeasurement" value="">
+        <p>Update Frequency</p>
+        <input type="text" name="frequency" value="">
+        <p>Plan</p>
+        <input type="text" name="plan" value="">
+        <p>Plan Per Update</p>
+        <input type="text" name="ppu" value="">
+        <p>Yellow Threshold</p>
+        <input type="text" name="ythres" value="">
+        <p>Red Threshold</p>
+        <input type="text" name="rThres" value="">
+      </div>
+      <div class="bottom__section">
+        <button type="button" name="button" class='close' onclick="showGoalForm()">Close</button>
+        <button type="button" name="button" class="create">Create a goal</button>
+      </div>
+    </div>
+    <div class="goal__popup__container" id="kpiPopUP">
+      <div class="top__section">
+        <p>Create A Project</p>
+        <i class="fas fa-times" onclick="showKpiForm()"></i>
+      </div>
+      <div class="goal__inputs">
+        <p>Project</p>
+        <select class="" name="goal">
+          <option value="goal1">Project1</option>
+          <option value="goal2">Project2</option>
+          <option value="goal3">Project3</option>
+          <option value="goal4">Project4</option>
+        </select>
+        <p>Name</p>
+        <input type="text" name="name" value="">
+        <p>Owner</p>
+        <input type="text" name="owner" value="">
+        <p>Due Date</p>
+        <input type="date" name="deadline" value="">
+        <p>Unit of Measurement</p>
+        <input type="text" name="unitmeasurement" value="">
+        <p>Update Frequency</p>
+        <input type="text" name="frequency" value="">
+        <p>Plan</p>
+        <input type="text" name="plan" value="">
+        <p>Yellow Threshold</p>
+        <input type="text" name="ythres" value="">
+        <p>Red Threshold</p>
+        <input type="text" name="rThres" value="">
+      </div>
+      <div class="bottom__section">
+        <button type="button" name="button" class='close' onclick="showKpiForm()">Close</button>
+        <button type="button" name="button" class="create">Create a Project</button>
+      </div>
+    </div>
+    <div class="goal__popup__container" id="kpiPopUP2">
+      <div class="top__section">
+        <p>Create A Project</p>
+        <i class="fas fa-times" onclick="showKpiForm2()"></i>
+      </div>
+      <div class="goal__inputs">
+        <p>Project</p>
+        <select class="" name="goal">
+          <option value="goal1">Project1</option>
+          <option value="goal2">Project2</option>
+          <option value="goal3">Project3</option>
+          <option value="goal4">Project4</option>
+        </select>
+        <p>Name</p>
+        <input type="text" name="name" value="">
+        <p>Owner</p>
+        <input type="text" name="owner" value="">
+        <p>Due Date</p>
+        <input type="date" name="deadline" value="">
+        <p>Unit of Measurement</p>
+        <input type="text" name="unitmeasurement" value="">
+        <p>Update Frequency</p>
+        <input type="text" name="frequency" value="">
+        <p>Plan</p>
+        <input type="text" name="plan" value="">
+        <p>Yellow Threshold</p>
+        <input type="text" name="ythres" value="">
+        <p>Red Threshold</p>
+        <input type="text" name="rThres" value="">
+      </div>
+      <div class="bottom__section">
+        <button type="button" name="button" class='close' onclick="showKpiForm2()">Close</button>
+        <button type="button" name="button" class="create">Create a project</button>
+      </div>
+    </div>
+
   </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -284,6 +431,7 @@
     });
   </script>
   <script src="js/sidebar.js" charset="utf-8"></script>
+  <script src="js/showForms.js" charset="utf-8"></script>
 </body>
 
 </html>

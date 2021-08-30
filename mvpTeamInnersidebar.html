@@ -74,11 +74,28 @@
     <div class="center__content">
       <div class="inner__sidebar">
         <ul>
-          <li>
-          <a href="#">Team</a>
+          <li class="dropdown_menu">
+          <p href="#">Team</p>
           <i class="fas fa-chevron-down"></i>
         </li>
-        <li> <a href="#">Suppliers</a><i class="fas fa-chevron-down"></i> </li>
+        <li class="dropdownItems">
+          <div class="">
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+
+          </div>
+        </li>
+        <li class="dropdown_menu"> <p>Suppliers</p><i class="fas fa-chevron-down"></i> </li>
+        <li class="dropdownItems">
+          <div class="">
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+            <a href="#">Name</a>
+          </div>
+        </li>
         <li class="active"> <a href="#">Recent Chats</a> </li>
         <li> <a href="#">Sarah</a> </li>
         <li> <a href="#">Ben & Pat</a> </li>
@@ -91,6 +108,23 @@
   </div>
   </div>
   <script src="js/sidebar.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  let dropdown = document.getElementsByClassName('dropdown_menu');
+  for(let i = 0 ; i < dropdown.length ;  i ++){
+    dropdown[i].addEventListener('click' , function () {
+      let dropdownItems = this.nextElementSibling;
+
+      if(dropdownItems.style.maxHeight){
+
+        dropdownItems.style.maxHeight = null;
+      }
+      else {
+
+        dropdownItems.style.maxHeight = dropdownItems.scrollHeight + "px";
+    }
+  })
+  }
+  </script>
 </body>
 
 </html>
