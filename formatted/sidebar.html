@@ -1,0 +1,36 @@
+<div class="sidebar">
+  <ul>
+    <li class="active"><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
+    <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
+    <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
+    <li><a href="../comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+    <li><a href="../comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+    <li><a href="../comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+    <li><a href="../comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+  </ul>
+  <div class="footer">
+    <p> © <span id="year"></span> Circle View. All Rights Reserved.</p>
+  </div>
+</div>
+<div class="sidebar__mobile" id="sidebar__mobile">
+  <div class="sidebar">
+    <ul>
+      <li class="active"><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
+      <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
+      <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
+      <li><a href="../comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+      <li><a href="../comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+      <li><a href="../comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+      <li><a href="../comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+    </ul>
+    <div class="footer">
+      <p> © <span id="year1"></span> Circle View. All Rights Reserved.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  let date = new Date();
+  document.getElementById('year').innerText = date.getYear() + 1900;
+  document.getElementById('year1').innerText = date.getYear() + 1900;
+</script>

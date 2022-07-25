@@ -22,46 +22,52 @@
       <img src="assets/logo.png" alt="">
     </div>
     <div class="right__side">
-      <div class="videocall">
+      <!-- <div class="videocall">
         <i class="fas fa-video"></i>
         <p class="text">Floor Cam</p>
-      </div>
+      </div> -->
       <div class="profile">
         <div class="profile__image">
           <img src="https://allinonetrickz.com/wp-content/uploads/2019/05/Girls-Trending-Profile-Pic-2019.png" alt="">
         </div>
-        <a href="#" class="text">Need Help?</a>
+        <div class="text">
+            <a href="javascript:void(0)">My Account</a>
+            <div class="options" id="navOptions">
+              <a href="#">Subscriptions</a>
+              <a href="#">Support</a>
+            </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="main__body">
     <div class="sidebar">
       <ul>
-        <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
+        <li><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
         <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
-        <li class="active"><a href="#"> <img src="assets/docs.png" alt=""> Plan</a></li>
-        <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
-        <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
-        <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
-        <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+        <li class="active" ><a href="#"> <img src="assets/docs.png" alt=""> Plan</a></li>
+        <li><a href="comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+        <li><a href="comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+        <li><a href="comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+        <li><a href="comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
       </ul>
       <div class="footer">
-        <p> © 2020 Circle View. All Rights Reserved.</p>
+        <p> © <span id="year"></span> Circle View. All Rights Reserved.</p>
       </div>
     </div>
     <div class="sidebar__mobile" id="sidebar__mobile">
       <div class="sidebar">
         <ul>
-          <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
+          <li><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
           <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
-          <li class="active"><a href="#"> <img src="assets/docs.png" alt=""> Plan</a></li>
-          <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
-          <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
-          <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
-          <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+          <li class="active" ><a href="#"> <img src="assets/docs.png" alt=""> Plan</a></li>
+          <li><a href="comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+          <li><a href="comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+          <li><a href="comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+          <li><a href="comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
         </ul>
         <div class="footer">
-          <p> © 2020 Circle View. All Rights Reserved.</p>
+          <p> © <span id="year1"></span> Circle View. All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -273,7 +279,12 @@
         <p>Name</p>
         <input type="text" name="name" value="">
         <p>Owner</p>
-        <input type="text" name="owner" value="">
+        <select class="" name="owner">
+          <option value="name1">name1</option>
+          <option value="name2">name2</option>
+          <option value="name3">name3</option>
+          <option value="name4">name4</option>
+        </select>
         <p>Unit of Measurement</p>
         <input type="text" name="unitmeasurement" value="">
         <p>Update Frequency</p>
@@ -298,25 +309,31 @@
         <i class="fas fa-times" onclick="showKpiForm()"></i>
       </div>
       <div class="goal__inputs">
-        <p>Goal</p>
-        <select class="" name="goal">
-          <option value="goal1">Goal1</option>
-          <option value="goal2">Goal2</option>
-          <option value="goal3">Goal3</option>
-          <option value="goal4">Goal4</option>
-        </select>
         <p>Name</p>
         <input type="text" name="name" value="">
         <p>Owner</p>
-        <input type="text" name="owner" value="">
-        <p>Due Date</p>
-        <input type="date" name="deadline" value="">
+        <select class="" name="owner">
+          <option value="name1">name1</option>
+          <option value="name2">name2</option>
+          <option value="name3">name3</option>
+          <option value="name4">name4</option>
+        </select>
+        <p>Goal Target Time (in Months)</p>
+        <input type="number" name="gtc" value="12" min="0">
+        <p>Goal Amount</p>
+        <input type="number" name="plan" value="">
         <p>Unit of Measurement</p>
         <input type="text" name="unitmeasurement" value="">
         <p>Update Frequency</p>
-        <input type="text" name="frequency" value="">
-        <p>Plan</p>
-        <input type="text" name="plan" value="">
+        <select class="" name="frequency">
+          <option value="">weekly</option>
+          <option value="">monthly</option>
+          <option value="">quaterly</option>
+          <option value="">biannualy</option>
+          <option value="">anually</option>
+        </select>
+        <p>Goal Target Per Update</p>
+        <input type="text" name="ppu" value="">
         <p>Yellow Threshold</p>
         <input type="text" name="ythres" value="">
         <p>Red Threshold</p>
@@ -338,6 +355,11 @@
   </script>
   <script src="js/sidebar.js" charset="utf-8"></script>
   <script src="js/showForms.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    let date = new Date();
+    document.getElementById('year').innerText = date.getYear() + 1900;
+    document.getElementById('year1').innerText = date.getYear() + 1900;
+  </script>
 </body>
 
 </html>

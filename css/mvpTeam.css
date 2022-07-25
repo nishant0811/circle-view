@@ -59,6 +59,40 @@ justify-content: space-between;
   border-left : 2px solid #8598AD;
 }
 
+.profile .text{
+  position: relative;
+}
+
+.profile .options{
+  position: absolute;
+  right: 0px;
+  background: white;
+  padding: 16px;
+  filter: drop-shadow(0px 3px 11.5px rgba(0,0,0,0.16));
+  border-radius: 8px;
+  top : 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.profile .text:hover .options{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.profile .options a{
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+
 .profile__image
   {
     margin: 0 16px 0 48px;
@@ -184,6 +218,16 @@ justify-content: space-between;
   margin-top: -2px;
 }
 
+.inner__sidebar .newChat{
+  background: #163391;
+  color : white;
+  cursor: pointer;
+}
+
+.inner__sidebar .newChat a{
+  color : white;
+}
+
 .inner__sidebar li.dropdownItems a{
   margin-top: 8px;
 }
@@ -263,6 +307,7 @@ justify-content: space-between;
   border-radius: 8px;
   display: block;
   border-bottom : 6px solid #F2F3F7;
+  position: relative;
 }
 
 .contacts .profile.active ,.contacts .profile:hover{
@@ -277,6 +322,23 @@ justify-content: space-between;
   background-color: #F2F3F7;
   border-radius: 8px;
 
+}
+
+.profile .cross{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color : rgba(0,0,0,0.5);
+  cursor : pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+
+.profile:hover .cross{
+  opacity: 1;
+  visibility: visible;
 }
 
 .profile.active .background , .profile:hover .background{
@@ -428,27 +490,37 @@ justify-content: space-between;
   cursor: pointer;
 }
 
-.send__messages input {
+.send__messages textarea {
   width: 95%;
+  height: 100%;
   padding: 8px;
-  border-radius: 20px;
+  border-radius: 8px;
   border : 1px solid rgba(0,0,0,0.5);
-  padding-right: 50px;
+  padding-right: 40px;
+  max-height: 100px;
+  resize: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
-.send__messages input:focus{
+.send__messages textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.send__messages textarea:focus{
   outline: 0;
 }
 
 .send {
+  position: relative;
   padding: 10px 32px;
   border : none;
   background: #56E7BC;
   border-radius: 22px;
   color : white;
-  margin-left: -66px;
-  cursor: pointer
+  cursor: pointer;
+  margin-left: 8px;
 
 }
 

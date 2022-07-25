@@ -1,0 +1,41 @@
+<div class="goal__popup__container" id="goalPopUP">
+  <div class="top__section">
+    <p>Create A Goal</p>
+    <i class="fas fa-times" onclick="showGoalForm()"></i>
+  </div>
+  <div class="goal__inputs">
+    <p>Name</p>
+    <input type="text" name="name" value="">
+    <p>Owner</p>
+    <select class="" name="owner">
+      <option value="name1">name1</option>
+      <option value="name2">name2</option>
+      <option value="name3">name3</option>
+      <option value="name4">name4</option>
+    </select>
+    <p>Goal Target Time (in Months)</p>
+    <input type="number" name="gtc" value="12" min="0">
+    <p>Goal Amount</p>
+    <input type="number" name="plan" value="">
+    <p>Unit of Measurement</p>
+    <input type="text" name="unitmeasurement" value="">
+    <p>Update Frequency</p>
+    <select class="" name="frequency">
+      <option value="">weekly</option>
+      <option value="">monthly</option>
+      <option value="">quaterly</option>
+      <option value="">biannualy</option>
+      <option value="">anually</option>
+    </select>
+    <p>Goal Target Per Update</p>
+    <input type="text" name="ppu" value="">
+    <p>Yellow Threshold</p>
+    <input type="text" name="ythres" value="">
+    <p>Red Threshold</p>
+    <input type="text" name="rThres" value="">
+  </div>
+  <div class="bottom__section">
+    <button type="button" name="button" class='close' onclick="showGoalForm()">Close</button>
+    <button type="button" name="button" class="create">Create a goal</button>
+  </div>
+</div>

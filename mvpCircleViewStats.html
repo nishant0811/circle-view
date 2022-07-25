@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Circle View Stats</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/17.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/17.png" type="image/x-icon" sizes="32x32">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -22,15 +22,22 @@
       <img src="assets/logo.png" alt="">
     </div>
     <div class="right__side">
-      <div class="videocall">
+      <!-- <div class="videocall">
         <i class="fas fa-video"></i>
         <p class="text">Floor Cam</p>
-      </div>
+      </div> -->
       <div class="profile">
         <div class="profile__image">
           <img src="https://allinonetrickz.com/wp-content/uploads/2019/05/Girls-Trending-Profile-Pic-2019.png" alt="">
         </div>
-        <a href="#" class="text">Need Help?</a>
+        <div class="text">
+            <a href="javascript:void(0)">My Account</a>
+            <div class="options" id="navOptions">
+              <a href="#">Subscriptions</a>
+              <a href="#">Support</a>
+            </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -39,14 +46,14 @@
       <ul>
         <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
         <li class="active"><a href="#"> <img src="assets/statsActive.png" alt=""> Circle View Stats</a></li>
-        <li ><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
-        <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
-        <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
-        <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
-        <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+        <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
+        <li><a href="comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+        <li><a href="comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+        <li><a href="comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+        <li><a href="comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
       </ul>
       <div class="footer">
-        <p> © 2020 Circle View. All Rights Reserved.</p>
+        <p> © <span id="year"></span> Circle View. All Rights Reserved.</p>
       </div>
     </div>
     <div class="sidebar__mobile" id="sidebar__mobile">
@@ -55,13 +62,13 @@
           <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
           <li class="active"><a href="#"> <img src="assets/statsActive.png" alt=""> Circle View Stats</a></li>
           <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
-          <li><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
-          <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
-          <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
-          <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+          <li><a href="comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+          <li><a href="comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+          <li><a href="comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+          <li><a href="comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
         </ul>
         <div class="footer">
-          <p> © 2020 Circle View. All Rights Reserved.</p>
+          <p> © <span id="year1"></span> Circle View. All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -122,6 +129,15 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js" charset="utf-8"></script>
   <script src="js/statsChart.js" charset="utf-8"></script>
   <script src="js/sidebar.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    let date = new Date();
+    document.getElementById('year').innerText = date.getYear() + 1900;
+    document.getElementById('year1').innerText = date.getYear() + 1900;
+
+    function showOptions(){
+      document.getElementById('navOptions').classList.toggle('active')
+    }
+  </script>
 </body>
 
 </html>

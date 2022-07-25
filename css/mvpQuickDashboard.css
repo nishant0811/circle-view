@@ -59,6 +59,40 @@ justify-content: space-between;
   border-left : 2px solid #8598AD;
 }
 
+.profile .text{
+  position: relative;
+}
+
+.profile .options{
+  position: absolute;
+  right: 0px;
+  background: white;
+  padding: 16px;
+  filter: drop-shadow(0px 3px 11.5px rgba(0,0,0,0.16));
+  border-radius: 8px;
+  top : 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.7s;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.profile .text:hover .options{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.profile .options a{
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+
 .profile__image
   {
     margin: 0 16px 0 48px;
@@ -230,19 +264,19 @@ justify-content: space-between;
   position: relative;
   max-height: 0px;
   overflow: hidden;
-  transition: 0.5s ;
+  transition: 0.7s ;
 }
 
 .task__task:hover + .details{
   padding: 8px;
   max-height: 100%;
-  transition: 0.5s ;
+  transition: 0.7s ;
 }
 
 .task__task + .details:hover{
   padding: 8px;
   max-height: 100%;
-  transition: 0.5s ;
+  transition: 0.7s ;
 }
 
 
@@ -624,7 +658,7 @@ td.weekday{
   font-weight: 300;
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .modal__content{
@@ -668,7 +702,7 @@ td.weekday{
   overflow-y: scroll;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .goal__popup__container.active{
@@ -692,12 +726,13 @@ td.weekday{
   margin-bottom: 8px;
 }
 
-.goal__inputs input{
+.goal__inputs input , .goal__inputs select{
   width : 100%;
   padding: 4px;
   border : 1px solid #858588;
   border-radius: 4px;
   margin-bottom: 16px;
+  background: white;
 }
 
 .goal__inputs input:focus , .goal__inputs input:active{
@@ -744,7 +779,7 @@ button.create{
   left: 0;
   top : 0px;
   height: 100%;
-  transition: 0.5s ease-out;
+  transition: 0.7s ease-out;
   z-index: 3;
   width: 0;
   overflow: hidden;

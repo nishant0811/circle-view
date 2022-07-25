@@ -59,6 +59,40 @@ justify-content: space-between;
   border-left : 2px solid #8598AD;
 }
 
+.profile .text{
+  position: relative;
+}
+
+.profile .options{
+  position: absolute;
+  right: 0px;
+  background: white;
+  padding: 16px;
+  filter: drop-shadow(0px 3px 11.5px rgba(0,0,0,0.16));
+  border-radius: 8px;
+  top : 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.profile .text:hover .options{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.profile .options a{
+  display: block;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+
 .profile__image
   {
     margin: 0 16px 0 48px;

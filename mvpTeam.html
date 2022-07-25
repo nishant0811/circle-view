@@ -22,46 +22,52 @@
       <img src="assets/logo.png" alt="">
     </div>
     <div class="right__side">
-      <div class="videocall">
+      <!-- <div class="videocall">
         <i class="fas fa-video"></i>
         <p class="text">Floor Cam</p>
-      </div>
+      </div> -->
       <div class="profile">
         <div class="profile__image">
           <img src="https://allinonetrickz.com/wp-content/uploads/2019/05/Girls-Trending-Profile-Pic-2019.png" alt="">
         </div>
-        <a href="#" class="text">Need Help?</a>
+        <div class="text">
+            <a href="javascript:void(0)">My Account</a>
+            <div class="options" id="navOptions">
+              <a href="#">Subscriptions</a>
+              <a href="#">Support</a>
+            </div>
+        </div>
       </div>
     </div>
   </div>
   <div class="main__body">
     <div class="sidebar">
       <ul>
-        <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
+        <li><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
         <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
         <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
-        <li class="active"><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
-        <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
-        <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
-        <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+        <li class="active" ><a href="comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+        <li><a href="comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+        <li><a href="comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+        <li><a href="comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
       </ul>
       <div class="footer">
-        <p> © 2020 Circle View. All Rights Reserved.</p>
+        <p> © <span id="year"></span> Circle View. All Rights Reserved.</p>
       </div>
     </div>
     <div class="sidebar__mobile" id="sidebar__mobile">
       <div class="sidebar">
         <ul>
-          <li><a href="#"> <img src="assets/dashboard.png" alt=""> QuickView Dashboard</a></li>
+          <li class="active"><a href="#"> <img src="assets/dashboardActive.png" alt=""> QuickView Dashboard</a></li>
           <li><a href="#"> <img src="assets/stats.png" alt=""> Circle View Stats</a></li>
           <li><a href="#"> <img src="assets/docss.png" alt=""> Plan</a></li>
-          <li class="active"><a href="#"><img src="assets/team.png" alt=""> Team</a></li>
-          <li><a href="#"><img src="assets/meet.png" alt=""> Meet</a></li>
-          <li><a href="#"> <img src="assets/plan.png" alt=""> Docs</a></li>
-          <li><a href="#"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
+          <li><a href="comingsoon.html"><img src="assets/team.png" alt=""> Team</a></li>
+          <li><a href="comingsoon.html"><img src="assets/meet.png" alt=""> Meet</a></li>
+          <li><a href="comingsoon.html"> <img src="assets/plan.png" alt=""> Docs</a></li>
+          <li><a href="comingsoon.html"> <img src="assets/tutorial.png" alt=""> Tutorials</a></li>
         </ul>
         <div class="footer">
-          <p> © 2020 Circle View. All Rights Reserved.</p>
+          <p> © <span id="year1"></span> Circle View. All Rights Reserved.</p>
         </div>
       </div>
     </div>
@@ -79,22 +85,23 @@
         </li>
         <li class="dropdownItems">
           <div class="">
-            <a href="#">Name</a>
-            <a href="#">Name</a>
-            <a href="#">Name</a>
-            <a href="#">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
 
           </div>
         </li>
         <li class="dropdown_menu"> <p>Suppliers</p><i class="fas fa-chevron-down"></i> </li>
         <li class="dropdownItems">
           <div class="">
-            <a href="#">Name</a>
-            <a href="#">Name</a>
-            <a href="#">Name</a>
-            <a href="#">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
+            <a href="javascript:void(0)" onclick="addUser();">Name</a>
           </div>
         </li>
+        <li class="newChat hover" onclick="resetChat()"> <a href="javascript:void(0)">New Chat</a> </li>
         <li class="active hover"> <a href="#">Recent Chats</a> </li>
         <li class="hover"onclick="setActive(1)"> <p>Sarah</p> </li>
         <li class="hover"onclick="setActive(2)"> <p>Ben & Pat</p> </li>
@@ -108,7 +115,8 @@
           <p>You are messaging - </p>
         </div>
         <div class="contacts" id="userProfiles">
-          <div class="profile active">
+          <div class="profile active" id="p0">
+            <i class="fas fa-times cross" onclick="removeProfile(0)"></i>
             <div class="background">
 
             </div>
@@ -120,7 +128,8 @@
               <p class="position">Position</p>
             </div>
           </div>
-          <div class="profile ">
+          <div class="profile " id="p1">
+              <i class="fas fa-times cross" onclick="removeProfile(1)"></i>
             <div class="background">
 
             </div>
@@ -132,7 +141,8 @@
               <p class="position">Position</p>
             </div>
           </div>
-          <div class="profile ">
+          <div class="profile " id="p2">
+              <i class="fas fa-times cross" onclick="removeProfile(2)"></i>
             <div class="background">
 
             </div>
@@ -144,7 +154,8 @@
               <p class="position">Position</p>
             </div>
           </div>
-          <div class="profile ">
+          <div class="profile " id="p3">
+              <i class="fas fa-times cross" onclick="removeProfile(3)"></i>
             <div class="background">
 
             </div>
@@ -162,7 +173,7 @@
         </div>
         <div class="chatting">
           <div class="chat_area">
-            <div class="chats">
+            <div class="chats" id="chats">
               <div class="message">
                 <img src="https://allinonetrickz.com/wp-content/uploads/2019/05/Girls-Trending-Profile-Pic-2019.png" alt="">
                 <p class="content">Lorem Ipsum</p>
@@ -217,19 +228,19 @@
                 <p onclick="addUser(); addUserShow()">Name</p>
                 <p onclick="addUser(); addUserShow()">Name</p>
               </div>
-              <input type="text" name="" value="" class="text" placeholder="Type.....">
+              <textarea name="name"></textarea>
               <button type="button" name="button" class="send">Send</button>
               <input type="file" name="" value="" id="file">
             </div>
           </form>
           </div>
           <div class="notes">
-            <div class="heading">
+            <!-- <div class="heading">
               <p>My Notes</p>
             </div>
             <div class="notes__div">
               <textarea name="notes"></textarea>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -239,6 +250,11 @@
 
   <script src="js/sidebar.js" charset="utf-8"></script>
   <script src="js/team.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    let date = new Date();
+    document.getElementById('year').innerText = date.getYear() + 1900;
+    document.getElementById('year1').innerText = date.getYear() + 1900;
+  </script>
 
 </body>
 

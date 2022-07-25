@@ -1,3 +1,5 @@
+count = 3;
+
 function fileUpload() {
   document.getElementById('file').click()
 }
@@ -20,9 +22,11 @@ function setActive(num){
   `;
 
   for(let i = 0 ; i<num ; i++){
+    count +=1
     profileBox.innerHTML +=
     `
-    <div class="profile ">
+    <div class="profile " id="p${count}">
+    <i class="fas fa-times cross" onclick="removeProfile(${count})"></i>
     <div class="background">
 
     </div>
@@ -41,6 +45,10 @@ function setActive(num){
 }
 
 
+function removeProfile(id){
+  document.getElementById('p'+id).style.display = 'none';
+}
+
 let dropdown = document.getElementsByClassName('dropdown_menu');
 for(let i = 0 ; i < dropdown.length ;  i ++){
   dropdown[i].addEventListener('click' , function () {
@@ -58,13 +66,21 @@ for(let i = 0 ; i < dropdown.length ;  i ++){
 }
 
 
+function resetChat(){
+  document.getElementById('userProfiles').innerHTML = '';
+  document.getElementById('chats').innerHTML = ``;
+}
+
+
 function addUserShow(){
   document.getElementById('addUser').classList.toggle('active')
 }
 
 function addUser() {
+  count +=1
   document.getElementById('userProfiles').innerHTML += `
-  <div class="profile ">
+  <div class="profile " id="p${count}"">
+  <i class="fas fa-times cross" onclick="removeProfile(${count})"></i>
   <div class="background">
 
   </div>
